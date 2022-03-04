@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier Javascript - ToDo List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header><h1>Atelier Javascript - ToDo List</h1></header>
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+       
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">Toutes</option>
+          <option value="completed">Complétées</option>
+          <option value="uncompleted">À Faire</option>
+     
+        </select>
+      </div>  
+       <input type="date" id="start" name="trip-start" value="2022-03-04" min="2000-01-01" max="2030-12-31">
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
